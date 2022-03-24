@@ -1,4 +1,4 @@
-package com.maxi.gestao.dominio;
+package com.maxi.gestao.dominios;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class Categoria implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private String id;
 	private String nome;
 	private String descricao;
 	
@@ -30,18 +30,18 @@ public class Categoria implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Categoria(int id, String nome, String descricao) {
+	public Categoria(String id, String nome, String descricao) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
