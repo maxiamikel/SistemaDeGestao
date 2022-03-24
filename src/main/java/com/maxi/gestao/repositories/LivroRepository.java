@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.maxi.gestao.dominios.Livro;
 
 @Repository
-public interface LivroRepository extends JpaRepository<Livro, String>{
+public interface LivroRepository extends JpaRepository<Livro, Long>{
 
 }
