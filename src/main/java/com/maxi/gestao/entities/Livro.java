@@ -1,4 +1,4 @@
-package com.maxi.gestao.dominios;
+package com.maxi.gestao.entities;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -23,6 +25,7 @@ public class Livro implements Serializable {
 	private String nomeAutor;
 	private String texto;
 	
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name="categoria_id")
 	private Categoria categoria;

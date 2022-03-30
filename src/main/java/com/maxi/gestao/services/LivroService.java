@@ -7,8 +7,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.maxi.gestao.dominios.Categoria;
-import com.maxi.gestao.dominios.Livro;
+import com.maxi.gestao.entities.Categoria;
+import com.maxi.gestao.entities.Livro;
 import com.maxi.gestao.repositories.CategoriaRepository;
 import com.maxi.gestao.repositories.LivroRepository;
 

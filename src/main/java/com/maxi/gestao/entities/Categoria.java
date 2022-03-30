@@ -1,4 +1,4 @@
-package com.maxi.gestao.dominios;
+package com.maxi.gestao.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;
